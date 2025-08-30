@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เข้าสู่ระบบ</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .form-box {
+      max-width: 500px;
+      margin: auto;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="w3-container w3-blue w3-center">
+  <h2>เข้าสู่ระบบ</h2>
+</div>
+
+<div class="w3-container w3-card w3-white w3-padding form-box">
+  <form action="login.php" method="POST">
+    <label>อีเมล</label>
+    <input class="w3-input w3-border" type="email" name="email" required>
+
+    <label class="w3-margin-top">รหัสผ่าน</label>
+    <input class="w3-input w3-border" type="password" name="password" required>
+
+    <button class="w3-button w3-blue w3-margin-top w3-block">เข้าสู่ระบบ</button>
+
+    <!-- ปุ่มสมัครสมาชิก -->
+    <a href="register.html" class="w3-button w3-block w3-border w3-margin-top">
+      ยังไม่มีบัญชี? สมัครสมาชิก
+    </a>
+
+    <!-- ปุ่มลืมรหัสผ่าน -->
+    <a href="forgot_password.php" class="w3-button w3-block w3-border w3-margin-top w3-red">
+      ลืมรหัสผ่าน?
+    </a>
+  </form>
+</div>
+
+</body>
+</html>
